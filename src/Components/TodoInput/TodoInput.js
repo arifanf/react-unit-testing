@@ -17,10 +17,10 @@ const TodoInput = props => {
   return (
     <div className={style.container}>
         <div className={style.input_container} >
-            <input type="text" ref={todoInputField}/>
+            <input type="text" ref={todoInputField} data-testid="todo-input-field" />
         </div>
         <div className={style.button_container} >
-            <button onClick={clickButtonHandler}>Add Todo</button>
+            <button onClick={clickButtonHandler} data-testid="todo-input-button">Add Todo</button>
         </div>
     </div>
   )
